@@ -7,7 +7,7 @@
 
 缺点：**使用条件限制为 VSCode + Json、必须打开 WorkSpace**
 ## 2. 怎么安装和使用？
-将文件夹拖入项目中，等待编译完成即可
+安装 Package 或者将 VSCodeTool 文件夹拖入项目中，等待编译完成即可
 [![pkkx02V.png](https://s21.ax1x.com/2024/05/03/pkkx02V.png)](https://imgse.com/i/pkkx02V)
 完成安装后点击 VSCodeTool/InitConfig 生成工具的 Config 以及 WorkSpace 文件，WorkSpace 文件在工程的根目录中，在 VSCode 中打开 WorkSpace 后修改工具 Config
 [![pkkxdCq.png](https://s21.ax1x.com/2024/05/03/pkkxdCq.png)](https://imgse.com/i/pkkxdCq)
