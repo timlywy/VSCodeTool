@@ -8,16 +8,16 @@
 缺点：**使用条件限制为 VSCode + Json、必须打开 WorkSpace**
 ## 2. 怎么安装和使用？
 将文件夹拖入项目中，等待编译完成即可
-![alt text](Image/image-1.png)
+[![pkkx02V.png](https://s21.ax1x.com/2024/05/03/pkkx02V.png)](https://imgse.com/i/pkkx02V)
 完成安装后点击 VSCodeTool/InitConfig 生成工具的 Config 以及 WorkSpace 文件，WorkSpace 文件在工程的根目录中，在 VSCode 中打开 WorkSpace 后修改工具 Config
-![alt text](Image/image-2.png)
+[![pkkxdCq.png](https://s21.ax1x.com/2024/05/03/pkkxdCq.png)](https://imgse.com/i/pkkxdCq)
 
 AllowPolymorphism指是否针对列表或字典数据中的多态存储提供文本补全支持
 
 JsonSchemeas 中可配置 Json 的数据类以及 Json 文件路径的映射关系，IsList 表示一个该路径下的 Json 文件中容纳一组数据还是单个数据。
-![alt text](Image/image-3.png)
+[![pkkxw80.png](https://s21.ax1x.com/2024/05/03/pkkxw80.png)](https://imgse.com/i/pkkxw80)
 配置完成后点击 VSCodeTool/UpdateSchema，工具会自动生成 JsonSchema 文件并索引到 WorkSpace 中，在对应路径下创建 Json 文件就可以使用文本补全和格式校验了。
-![alt text](Image/image-4.png)
+[![pkkxU5n.png](https://s21.ax1x.com/2024/05/03/pkkxU5n.png)](https://imgse.com/i/pkkxU5n)
 另外 VSCodeTool 还提供了快速注释功能，在数据类对应的变量上使用 VSCodeToolDescription 进行标注后重新生成 JsonSchema 文件，此时再进行 Json 文本编辑时对应的字段就会显示注释了。
 ## 3. 一些注意事项
 建议 Unity 版本：**Unity2017.4+**  
