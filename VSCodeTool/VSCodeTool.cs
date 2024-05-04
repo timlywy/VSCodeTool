@@ -4,7 +4,6 @@ using System.IO;
 using System.Reflection;
 using UnityEditor;
 using UnityEngine;
-using FullSerializer;
 
 namespace VSCodeTool
 {
@@ -101,17 +100,8 @@ namespace VSCodeTool
         
         private static void GetToolConfig()
         {
-            object deserialized = null;
-            using (StreamReader toolConfig = new StreamReader(_toolConfigPath))
-            {
-                string toolConfigStr = toolConfig.ReadToEnd();
-                fsData toolConfigData = fsJsonParser.Parse(toolConfigStr);
-                fsSerializer serializer = new fsSerializer();
-                serializer.TryDeserialize(toolConfigData, typeof(VSCodeToolConfig), ref deserialized)
-                    .AssertSuccessWithoutWarnings();
-                toolConfig.Close();
-            }
-            _vsCodeToolConfig = deserialized as VSCodeToolConfig;
+            string toolConfigStr = File.ReadAllText(_toolConfigPath);
+            _vsCodeToolConfig = JsonUtility.FromJson<VSCodeToolConfig>(toolConfigStr);
         }
 
         private static void WriteToDefinitions()
