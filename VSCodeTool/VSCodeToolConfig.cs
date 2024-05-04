@@ -2,12 +2,14 @@ using System;
 
 namespace VSCodeTool
 {
+    [Serializable]
     public class VSCodeToolConfig
     {
         public bool AllowPolymorphism;
         public VSCodeToolJsonSchema[] JsonSchemas;
     }
     
+    [Serializable]
     public class VSCodeToolJsonSchema
     {
         public string Class;
